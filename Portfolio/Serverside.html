@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <title>Serverside Scripting</title>
+    </head>
+    
+    <h1 id="h1">Servide side scripting</h1>
+        <p> Når man bygger websites så er der 2 forskellige måder at gøre det på: 
+        Et website som er udelukkende opbygget af HTML & CSS Filer bliver kaldt for statisk hjemmesider. 
+        Man kan også benytte sig af noget der hedder et script som er når data overføres til klient som er afviklet af et script på en server - dette kaldes når et website er dynamisk. 
+        Der findes forskellige sprog at benytte sig af dog er den mest anvendte PHP.
+        </p>
+    <h2 id="h2">PHP</h2>
+        <p>HP er et værktøj at kunne skrive forskellige varianter af HTML-filer, hvor man skriver PHP-tags som starter med <?php og slutter med ?>. I stedet for at afslutte fil navnet med .html så skriver man i stedet for .php fordi så kan serveren registrerer at den har med en php fil at gøre.</p>
+    <h2 id="h2">Include</h2>
+        <p>PHP har også denne funktion at kunne genbruge kode. Man har måske noget fra et tidligere projekt f.eks. En navigationsmenu som man godt kunne tænke sig at bruge igen. I stedet for at skrive koden fra nu af igen så kan man skrive kode i en fil som så får fil-endelsen .inc. Så på de sider vil bruge denne her navigationsmenu skriver man blot: 
+        <?php include(“navmenu”);?>  Derefter vil serveren gå en gennemgang af php-filen serstatte dette include tag med den kode der i Nav. menuen, og på den måde kan du faktisk lave dit eget lille bibliotek af forskellige koder som du kan bruge til dine projekter.</p>
+    <h2 id="h2">Require</h2>
+        <p>Dette tag er sådan set det samme som include bortset fra at require tagget stopper afviklingen af scriptet hvis der skulle opstå fejl - da Include tagget fortsætter afviklingen af et script hvis der opstår en fejl. </p>
