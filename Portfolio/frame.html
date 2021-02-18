@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+            <title>Out of frame projekt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="frame.css">
+    </head>
+    <h1>Out of frame projekt</h1>
+        <p>I dette projekt skulle vi lave en plakat i A4 format, vores emne var "out of frame" og der skulle vi inkorporere et billede af os selv i denne plakat. </p>
+    
+    <h2>Research og inspiration</h2>
+        <p>Under denne her opgave vidste jeg sådan set ikke helt med hvad min plakat skulle se ud, så jeg begyndte sådan set at gå på jagt efter inspiration. Efter havde søgt lidt på forskellige sider så som printerest, behance og instagram fandt jeg frem til 2 billeder som jeg godt kunne tænke mig at lave min egen version af.</p>
+                   <!-- Slideshow container -->
+                                <div class="slideshow-container">
+
+                            <!-- Full-width images with number and caption text -->
+                                <div class="mySlides fade">
+                                    <div class="numbertext">1 / 2</div>
+                                        <img src="img/inspiration1.jpg" style="width:100%">
+
+                                        </div>
+
+                                    <div class="mySlides fade">
+                                    <div class="numbertext">2 / 2</div>
+                                    <img src="img/inspiration2.jpg" style="width:100%">
+                                    </div>
+
+
+
+
+                                    <!-- Next and previous buttons -->
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                </div>
+                    <br>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+
+                    <!-- Java script for slider starter her -->
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                            }
+
+                            function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                                }
+                    </script>
+                    <!--Java script slutter her -->
+    <h2>Produktion af plakat</h2>
+        <p>Efter jeg fik fandt i mine inspirationskilder så gik jeg i gang med at få taget nogle af de billeder der blev brugt til disse plakater. </p>
+            
+        <img class="billede" src="img/IMG_0110.png">
+        <img class="billede" src="img/IMG_0127.png">
+    
+        <p>Efter billeder blev taget gik jeg i photoshop og fik dem billedebehandlet til jeg sidst kom frem med mit resultat.</p>
